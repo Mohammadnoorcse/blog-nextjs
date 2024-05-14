@@ -1,13 +1,13 @@
 
-import React from 'react'
+
 import Links from './links/Links'
+import styles from"./navbar.module.css"
+import Link from 'next/link'
 
 function Navbar() {
   return (
-    <div>
-        <div>
-            Logo
-        </div>
+    <div className={styles.container}>
+        <Link href="/" className={styles.logo}>Noor</Link>
         <div>
            <Links/>
             
