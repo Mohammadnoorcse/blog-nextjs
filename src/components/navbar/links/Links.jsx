@@ -1,7 +1,8 @@
 "use client"
 import Link from "next/link";
 import styles from "./links.module.css"
-import NavLink from "../navLink/navLink";
+// import NavLink from "../navLink/navLink";
+import NavLink from "@/components/navbar/navLink/NavLink"
 import { useState } from "react";
 import Image from "next/image";
 
