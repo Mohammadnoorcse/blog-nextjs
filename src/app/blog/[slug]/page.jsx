@@ -14,20 +14,20 @@ import { getPost } from "@/lib/data";
 //   return res.json();
 // };
 
-// export const generateMetadata = async ({ params }) => {
-//   const { slug } = params;
+export const generateMetadata = async ({ params }) => {
+  const { slug } = params;
 
-//   // FETCH DATA WITH AN API
-//   // const post = await getData(slug);
+  // FETCH DATA WITH AN API
+  // const post = await getData(slug);
 
-//    // FETCH DATA WITHOUT AN API
-//    const post = await getPost(slug);
+   // FETCH DATA WITHOUT AN API
+   const post = await getPost(slug);
 
-//   return {
-//     title: post.title,
-//     description: post.desc,
-//   };
-// };
+  return {
+    title: post.title,
+    description: post.desc,
+  };
+};
 
 
 const SinglePostPage = async ({ params }) => {

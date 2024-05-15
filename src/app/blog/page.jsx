@@ -13,6 +13,11 @@ import {  getPosts } from "@/lib/data";
 //   return res.json();
 // };
 
+export const metadata = {
+  title: "Blog Page",
+  description: "Blog Page",
+};
+
 const BlogPage = async () => {
 
   // FETCH DATA WITH AN API
